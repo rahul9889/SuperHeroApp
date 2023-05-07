@@ -1,4 +1,6 @@
  
+
+//  ------------------ function for home page on loading-----------------------// 
 ((()=>{
 
 function handler(responseJSON){
@@ -29,32 +31,20 @@ function handler(responseJSON){
               <span>${element.thumbnail.path+'/standard_fantastic.' + element.thumbnail.extension}</span>
              </div>
               
-          </div>
-              
-              
-              
-              `
-
-                              
-            });
-
-            clickHandler();
-
-            
-
-
-
+          </div>`
+         });
+         clickHandler();
+         // ----footer-------------
          document.getElementById('footer').innerText=responseJSON.attributionText; 
 }
-// conn.open('get','http://gateway.marvel.com/v1/public/characters?ts=2&apikey=494ed1eb931aff37808083dfe4f0d43f&hash=4999b6e62f85dd61c3aebc2b702c351b',true);
-// conn.send();
-// console.log('hii');
-
 fetch(`https://gateway.marvel.com/v1/public/characters?ts=2&apikey=494ed1eb931aff37808083dfe4f0d43f&hash=4999b6e62f85dd61c3aebc2b702c351b`)
 .then(res => res.json())
 .then(data => handler(data));
 })());
 
+
+
+// -------function on click------------
 
 function clickHandler(){
    let characterDetail = document.querySelectorAll('.character');

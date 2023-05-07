@@ -1,6 +1,11 @@
+
+// array to stor different character object
 var arr=[];
+// index of array
 var a=0;
 
+
+//  parsing string into object
 let obj = JSON.parse(localStorage.getItem("heroInfo"));
 console.log(obj);
 let hername=document.getElementById('hero-name');

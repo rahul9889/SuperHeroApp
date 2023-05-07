@@ -1,6 +1,11 @@
-  let a=0;
-   let arr=[];
-  
+
+// index of array
+let a=0;
+// array to store character
+let arr=[];
+
+
+// getting element by their id  
 let searchBar = document.getElementById("search-bar");
 let searchResults = document.getElementById("search-results");
 
